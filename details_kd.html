@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Kẹo Dừa</title>
+    <style>
+        /* Tổng quan */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffa500, #e0f7fa, #ffccbc);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            gap: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #00796b;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #004d40;
+        }
+
+        h1 {
+            text-align: center;
+            color: #004d40;
+            margin-bottom: 30px;
+        }
+
+        .dish-details, .online-purchase, .reviews {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .dish-details {
+            background: #fce4ec;
+        }
+
+        .online-purchase {
+            background: #e0f2f1;
+        }
+
+        .reviews {
+            background: #ede7f6;
+        }
+
+        .dish-details:hover, .online-purchase:hover, .reviews:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .video-container {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 315px;
+            border-radius: 8px;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 10px;
+        }
+
+        .dish-details img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .dish-details img:hover {
+            transform: scale(1.05);
+        }
+
+        .online-purchase a {
+            color: #00796b;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .online-purchase a:hover {
+            color: #004d40;
+        }
+
+        .reviews ul li {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .reviews ul li:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navigation (Trang chủ và Liên hệ) */
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            gap: 20px;
+            background-color: #00796b;
+            padding: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        /* Phần cuối trang */
+        .explore-section {
+            background-color: #f7f7f7;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 50px auto;
+            width: 80%;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .explore-section h1 {
+            font-size: 40px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .explore-section p {
+            font-size: 18px;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .explore-links {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .explore-links a {
+            display: inline-block;
+            background-color: #00796b;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            width: 30%;
+            text-align: center;
+        }
+
+        .explore-links a:hover {
+            background-color: #004d40;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">Trang Chủ</a>
+            <a href="contact.html">Liên Hệ</a>
+        </nav>
+        <h1>Chi Tiết Kẹo Dừa</h1>
+        <div class="dish-details">
+            <p style="text-align: center; font-weight: bold; color: red; font-size: 30px;">Kẹo Dừa</p>
+            <p>Kẹo dừa Bến Tre được làm từ nước cốt dừa, đường và mạch nha. Hương vị thơm ngon, mềm mại.</p>
+            <img src="images/kẹo dừa 2.jpg" alt="Hình ảnh Kẹo Dừa">
+            <p style="text-align: center; font-weight: bold; color: #800080;">Hình ảnh kẹo dừa</p>
+
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0mvxb6ahBZ8?si=HO4TcfKkToITaDfl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <p style="text-align: center; font-weight: bold; color:#800080">Video hướng dẫn cách làm kẹo dừa</p>
+
+            <h3>Nguyên liệu:</h3>
+            <ul>
+                <li>Nước cốt dừa</li>
+                <li>Đường</li>
+                <li>Mạch nha</li>
+            </ul>
+
+            <h3>Cách làm:</h3>
+            <ol>
+                <li>Đun nóng nước cốt dừa và đường, khuấy đều cho đến khi đường tan hoàn toàn.</li>
+                <li>Thêm mạch nha và tiếp tục đun nhỏ lửa, khuấy đều cho đến khi hỗn hợp sệt lại.</li>
+                <li>Đổ hỗn hợp vào khuôn, để nguội và cắt thành miếng vừa ăn.</li>
+            </ol>
+        </div>
+
+        <div class="online-purchase">
+            <h3>Mua Nguyên Liệu Trực Tuyến:</h3>
+            <ul>
+                <li><a href="https://shopee.vn/product/916567907/24204732984?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkUm9yWVZMbGw0Q214S0d1TzNEZmUwNSs4N3hhaGd3YS9xRTNtTGwwWjJEMzBsSDE0YUppK0VXczZyVzFpcDBMbE13V0dWdlZiZG5scFZJRDFxL3psSVJTTnozMEh4QTRqK2s2V1hhdXJXQzg&gad_source=1&gclid=CjwKCAiAqfe8BhBwEiwAsne6gTiA3WG7xKWPvwOEqiA9mmvQ3lmBINTDDy1XM3B9G4nyeF41tTJ1gRoCtIMQAvD_BwE">Mua Nước Cốt Dừa</a></li>
+                <li><a href="https://shopee.vn/(G%C3%93I-1KG-)-%C4%90%C6%B0%E1%BB%9Dng-C%C3%A1t-Tr%E1%BA%AFng-Tinh-Luy%E1%BB%87n-%C4%90%C6%B0%E1%BB%9Dng-K%C3%ADnh-Tr%E1%BA%AFng-Ng%E1%BB%8Dt-D%E1%BB%8Bu-i.1069030400.26714378966?sp_atk=c67b6abe-23a6-460e-9f67-cf81c4fbf0e0&xptdk=c67b6abe-23a6-460e-9f67-cf81c4fbf0e0">Mua Đường</a></li>
+                <li><a href="https://shopee.vn/M%E1%BA%A1ch-nha-%E2%9A%A1-LO%E1%BA%A0I-NGON-%E2%9A%A1-m%E1%BA%A1ch-nha-l%C3%A0-nguy%C3%AAn-li%E1%BB%87u-kh%C3%B4ng-th%E1%BB%83-thi%E1%BA%BFu-trong-s%E1%BA%A3n-xu%E1%BA%A5t-b%C3%A1nh-m%E1%BB%A9t-k%E1%BA%B9o-v%C3%A0-bia-i.13434354.446443700?sp_atk=c3a83165-bc6d-441f-a855-3dbeb89df9e1">Mua Mạch Nha</a></li>
+            </ul>
+        </div>
+
+              <!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đánh Giá Món Ăn</title>
+  
+    <style> body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Làm bóng cho container */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+.reviews {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff3e0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.review {
+    background: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.review:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Hiệu ứng khi hover */
+}
+
+.review p {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.review strong {
+    color: #ff5722; /* Làm nổi bật tên món ăn */
+}
+
+.review .rating {
+    font-size: 18px;
+    color: #f4b400; /* Màu vàng cho đánh giá sao */
+}
+
+.related-dishes {
+    background: #f5f5f5; /* Màu nền sáng */
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.related-dishes:hover {
+    transform: scale(1.05); /* Tạo hiệu ứng phóng to */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng khi hover */
+}
+
+.related-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    background: #00796b; /* Màu xanh lá */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.related-links a:hover {
+    background: #004d40; /* Màu khi hover */
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <h2>Đánh Giá Món Ăn</h2>
+        <p>Hãy chia sẻ ý kiến của bạn về món ăn mà bạn đã thưởng thức!</p>
+        
+        <form onsubmit="addReview(event)">
+            <label for="dish">Tên món ăn:</label>
+            <input type="text" id="dish" name="dish" required>
+            
+            <label for="rating">Chấm điểm:</label>
+            <select id="rating" name="rating" required>
+                <option value="5">5 Sao - Tuyệt vời</option>
+                <option value="4">4 Sao - Ngon</option>
+                <option value="3">3 Sao - Bình thường</option>
+                <option value="2">2 Sao - Cần cải thiện</option>
+                <option value="1">1 Sao - Không hài lòng</option>
+            </select>
+            
+            <label for="review">Nhận xét của bạn:</label>
+            <textarea id="review" name="review" rows="5" required></textarea>
+            
+            <button type="submit">Gửi đánh giá</button>
+        </form>
+        
+        <div class="reviews">
+            <h3>Đánh giá gần đây</h3>
+            <div class="review">
+                <p><strong>Bánh xèo</strong> - <span class="rating">⭐⭐⭐⭐⭐</span></p>
+                <p>"Bánh xèo rất giòn, nhân ngon và đầy đủ hương vị!"</p>
+            </div>
+            <div class="review">
+                <p><strong>Cơm dừa</strong> - <span class="rating">⭐⭐⭐⭐</span></p>
+                <p>"Hương vị đậm đà, nước dùng thơm ngon."</p>
+            </div>
+            <div class="review">
+                <p><strong>Kẹo dừa</strong> - <span class="rating">⭐⭐⭐⭐</span></p>
+                <p>"Tuyệt vời!"</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addReview(event) {
+            event.preventDefault();
+            
+            let dish = document.getElementById('dish').value;
+            let rating = document.getElementById('rating').value;
+            let reviewText = document.getElementById('review').value;
+            
+            let reviewContainer = document.querySelector('.reviews');
+            let newReview = document.createElement('div');
+            newReview.classList.add('review');
+            newReview.innerHTML = `<p><strong>${dish}</strong> - <span class="rating">${'⭐'.repeat(rating)}</span></p><p>"${reviewText}"</p>`;
+            
+            reviewContainer.appendChild(newReview);
+            
+            document.getElementById('dish').value = '';
+            document.getElementById('rating').value = '5';
+            document.getElementById('review').value = '';
+        }
+    </script>
+<div class="related-dishes">
+    <h3 style="text-align: center;">Khám Phá Các Món Ăn Khác</h3>
+    <div class="related-links">
+        <a href="details_bx.html">Bánh Xèo</a>
+        <a href="details_cd.html">Cơm Dừa</a>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
+</body>
+</html>

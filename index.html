@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặc Sản Bến Tre</title>
+    <style>
+        /* Tổng quan */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #ffccbc);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navigation (Trang chủ và Liên hệ) */
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            gap: 20px;
+            background-color: #00796b; /* Nền màu xanh lá đậm */
+            padding: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;  /* Chữ lớn hơn */
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #004d40;
+        }
+
+        h1 {
+            text-align: center;
+            color: #004d40;
+            margin-bottom: 30px;
+            font-size: 36px; /* Chữ tiêu đề lớn hơn */
+        }
+
+        /* Định dạng các món ăn trong dạng nằm ngang */
+        .dish-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: nowrap;
+            margin-bottom: 40px;
+        }
+
+        .dish {
+            width: 30%;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #ffecb3;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .dish:nth-child(2) {
+            background-color: #c8e6c9;
+        }
+
+        .dish:nth-child(3) {
+            background-color: #b3e5fc;
+        }
+
+        .dish:hover {
+            transform: scale(1.03);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .dish img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .dish img:hover {
+            transform: scale(1.05);
+        }
+
+        .dish h2 {
+            color: #00796b;
+            margin-bottom: 10px;
+        }
+
+        .dish p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .red-bold-text {
+            color: red;
+            font-weight: bold;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .red-bold-text a {
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            background-color: red;
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: 3px solid darkred;
+            transition: all 0.3s ease;
+        }
+
+        .red-bold-text a:hover {
+            background-color: darkred;
+            border-color: black;
+            transform: scale(1.05);
+        }
+
+        /* Phần cuối trang */
+        .explore-section {
+            background-color: #f7f7f7;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 50px auto;
+            width: 80%;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .explore-section h1 {
+            font-size: 40px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .explore-section p {
+            font-size: 18px;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .explore-links {
+            display: flex;
+            justify-content: space-between; /* Các liên kết cách đều nhau */
+            gap: 15px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .explore-links a {
+            display: inline-block;
+            background-color: #00796b;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8x;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            width: 30%; /* Chiều rộng của các liên kết "Xem Thêm" ngang nhau */
+            text-align: center;
+        }
+
+        .explore-links a:hover {
+            background-color: #004d40;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html">Trang Chủ</a>
+
+ 
+
+<a href="https://anhthu12323.github.io/php.github.io/" class="contact-link"> Liên Hệ</a>
+
+
+        </nav>
+
+        <h1>Đặc Sản Bến Tre</h1>
+
+        <!-- Các món ăn -->
+        <div class="dish-container">
+            <div class="dish">
+                <h2>Kẹo Dừa</h2>
+                <img src="images/kẹo dừa.jpg" alt="Kẹo Dừa">
+                <p>Kẹo dừa là một loại kẹo đặc sản có nguồn gốc từ tỉnh Bến Tre, Việt Nam. Kẹo được chế biến từ nguyên liệu chính là cơm dừa, đường và mạch nha. Đây là loại kẹo đặc sản và là một nghề thủ công truyền thống mang đậm văn hóa xứ sở.</p>
+                <p class="red-bold-text"><a href="details_kd.html">Xem Thêm</a></p>
+            </div>
+
+            <div class="dish">
+                <h2>Bánh Xèo</h2>
+                <img src="images/bánh xào.jpg" alt="Bánh Xèo">
+                <p>Bánh xèo là một loại bánh Việt Nam, có bột bên ngoài, bên trong có nhân là tôm, thịt, giá đỗ, được rán màu vàng, đúc thành hình tròn hoặc gấp lại thành hình bán nguyệt.</p>
+                <p class="red-bold-text"><a href="details_bx.html">Xem Thêm</a></p>
+            </div>
+
+            <div class="dish">
+                <h2>Cơm Dừa</h2>
+                <img src="images/cơm dừa.jpg" alt="Cơm Dừa">
+                <p>Cơm dừa là một món ăn đặc sản nổi tiếng của vùng đất "xứ dừa" Bến Tre, Việt Nam. Món ăn này được chế biến bằng cách nấu cơm trong trái dừa, tạo nên một hương vị đặc trưng, thơm ngon và béo ngậy.</p>
+                <p class="red-bold-text"><a href="details_cd.html">Xem Thêm</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Khám phá Ẩm Thực -->
+    <div class="explore-section">
+        <h1>Khám phá Ẩm Thực Bến Tre</h1>
+        <p>Những món ăn đặc sản không thể bỏ lỡ khi đến Bến Tre</p>
+        <div class="explore-links">
+            <a href="https://fptshop.com.vn/tin-tuc/dien-may/com-dua-ben-tre-159062" target="_blank">Cơm Dừa</a>
+            <a href="https://banhbaominh.com/keo-dua-ben-tre-deo-thom-dam-vi-que-huong/" target="_blank">Kẹo Dừa</a>
+            <a href="https://www.traveloka.com/vi-vn/explore/culinary/banh-xeo-dac-san-o-dau/155928" target="_blank">Bánh Xèo</a>
+        </div>
+    </div>
+
+</body>
+</html>
